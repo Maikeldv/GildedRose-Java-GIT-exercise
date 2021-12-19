@@ -14,6 +14,7 @@ public class ItemFactory {
 
     public Item createItem(String name, int sellIn, int quality) throws Exception {
         switch(name) {
+            case "Boke me choco": return new SwitchItem(name, sellIn, quality);
             case "+5 Dexterity Vest": return new NormalItem(name, sellIn, quality);
             case "Aged Brie": return new AgingItem(name, sellIn, quality);
             case "Elixir of the Mongoose": return new NormalItem(name, sellIn, quality);
